@@ -1,0 +1,57 @@
+body{
+	background-color: #f4f8f9;
+}
+body, .wapper{
+	min-height: 100vh;
+    position: relative;
+}
+.navbar-light{
+	background-color: white; 
+}
+.side-bar{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    display: block;
+    font-weight: 200;
+    background-size: cover;
+    background-position: center center;
+
+}
+.card-block-cus {
+	padding: 0.6em;
+	height: 46px;
+}
+.card-fl-info {
+	padding: 10px;
+}
+.st-tm {
+	display: inline-block;
+    float: left;
+}
+.itineraries-tm {
+	display: inherit;
+}
+.estimate-tm-bl {
+	width: 65%;
+	display: block;
+	color: black;
+	margin: auto;
+}
+.estimate-tm-line {
+	display: block;
+	position: relative;
+    border-top: 2px solid #e0e4e5;
+    margin-top: 0.4375em;
+    margin-bottom: 0.5em;
+}
+.estimate-tm {
+	position: relative;
+
+}
+.iti-info {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

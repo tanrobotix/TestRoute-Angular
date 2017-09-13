@@ -1,0 +1,75 @@
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <!-- define angular app -->
+    <html ng-app="scotchApp">
+
+    <head>
+      
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/footer/footer-1.css">
+      <!-- jQuery -->
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script type="text/javascript" src="js/origin/jquery-3.2.1.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="js/custom/autocomplete_ajax.js"></script>
+      
+      <!-- Angular -->
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="js/custom/route.js"></script>
+
+      <!-- Fonts -->
+      <link href="fonts/awesome/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,greek">
+
+    </head>
+
+    <!-- define angular controller -->
+    <body ng-controller="mainController">
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#home">Angular Routing</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+            <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+            <li><a href="#contact"><i class="fa fa-comment"></i> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="main">
+        <div class="container text-center">
+          <div class="container-fluid">
+            <form method="GET" action="libs/request_amadeus.php"> 
+              <label for="ct">request</label>
+              <input class="city" type="text" name="origin">
+              <input class="city" type="type" name="destination">
+              <input type="date" class="date" name="departure_date">
+              <button class="btn btn-primary target">querying</button>
+            </form>
+            <div ng-view></div>
+          </div>
+        </div>
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div class="text-center"></div>
+        
+      </div>
+
+<!-- COPYRIGHT -->
+<footer>
+<div class="text-center copyright"> &copy;2017 ok. All Rights Reserved. </div>
+<!-- END COPYRIGHT -->
+</footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="js/origin/bootstrap.min.js"></script>
+</body>
+
+</html>
